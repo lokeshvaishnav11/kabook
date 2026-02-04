@@ -53,7 +53,7 @@ const Footer = () => {
       <div className="footer-text">
         <p></p>
         <p className="text-center">
-          © Copyright 2026. All Rights Reserved. Powered by 35peti.com
+          © Copyright 2026. All Rights Reserved. Powered by KABOOK365.com
         </p>
       </div>
     </div>
