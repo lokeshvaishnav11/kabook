@@ -1,0 +1,74 @@
+{
+ 
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "K.B.C",
+  "slug": "kbc",
+  "order": 2,
+  "match_id": 81,
+  "status": 1,
+  "id": 3081,
+  "event_data": {
+    "match_id": "81",
+    "title": "K.B.C",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "kbc",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Red-Black",
+        "Runners": [
+          {
+            "RunnerName": "Red-Black",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd-Even",
+        "Runners": [
+          {
+            "RunnerName": "Odd-Even",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "7 Up-7 Down",
+        "Runners": [
+          {
+            "RunnerName": "7 Up-7 Down",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "3 Card Judgement",
+        "Runners": [
+          {
+            "RunnerName": "3 Card Judgement",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Suits",
+        "Runners": [
+          {
+            "RunnerName": "Suits",
+            "SelectionId": "5"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["A", "B"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:42.677Z"
+  }
+}

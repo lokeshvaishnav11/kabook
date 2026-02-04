@@ -1,0 +1,56 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Lucky 15",
+  "slug": "lucky15",
+  "order": 17,
+  "match_id": 78,
+  "status": 1,
+  "id": 3078,
+  "event_data": {
+    "match_id": "78",
+    "title": "Lucky 15",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "lucky15",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Bookmaker",
+        "Runners": [
+          {
+            "RunnerName": "0 Runs",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "1 Runs",
+            "SelectionId": "2"
+          },
+          {
+            "RunnerName": "2 Runs",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "4 Runs",
+            "SelectionId": "4"
+          },
+          {
+            "RunnerName": "6 Runs",
+            "SelectionId": "5"
+          },
+          {
+            "RunnerName": "Wicket",
+            "SelectionId": "6"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

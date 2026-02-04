@@ -1,0 +1,112 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Teenpatti Poison One Day",
+  "slug": "poison",
+  "order": 23,
+  "match_id": 82,
+  "status": 1,
+  "id": 3082,
+  "event_data": {
+    "match_id": "82",
+    "title": "Teenpatti Poison One Day",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "poison",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Bookmaker",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Even",
+        "Runners": [
+          {
+            "RunnerName": "Poison Even",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Odd",
+        "Runners": [
+          {
+            "RunnerName": "Poison Odd",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Red",
+        "Runners": [
+          {
+            "RunnerName": "Poison Red",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Black",
+        "Runners": [
+          {
+            "RunnerName": "Poison Black",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Spade",
+        "Runners": [
+          {
+            "RunnerName": "Poison Spade",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Heart",
+        "Runners": [
+          {
+            "RunnerName": "Poison Heart",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Diamond",
+        "Runners": [
+          {
+            "RunnerName": "Poison Diamond",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Poison Club",
+        "Runners": [
+          {
+            "RunnerName": "Poison Club",
+            "SelectionId": "10"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "Player A",
+      "Player B"
+    ]
+  }
+}

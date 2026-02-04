@@ -1,0 +1,60 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "1 Card 20-20",
+  "slug": "teen120",
+  "order": 9,
+  "match_id": 89,
+  "status": 1,
+  "id": 3089,
+  "event_data": {
+    "match_id": "89",
+    "title": "1 Card 20-20",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teen120",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player",
+        "Runners": [
+          {
+            "RunnerName": "Player",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Dealer",
+        "Runners": [
+          {
+            "RunnerName": "Dealer",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Tie",
+        "Runners": [
+          {
+            "RunnerName": "Tie",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Pair",
+        "Runners": [
+          {
+            "RunnerName": "Pair",
+            "SelectionId": "4"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["Player", "Dealer"]
+  }
+}

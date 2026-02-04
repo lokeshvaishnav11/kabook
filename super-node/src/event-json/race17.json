@@ -1,0 +1,97 @@
+{
+ 
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Race To 17",
+  "slug": "race17",
+  "order": 2,
+  "match_id": 76,
+  "status": 1,
+  "id": 3076,
+  "event_data": {
+    "match_id": "76",
+    "title": "Race To 17",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "race17",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Race to 17",
+        "Runners": [
+          {
+            "RunnerName": "Race to 17",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Big Card",
+        "Runners": [
+           {
+            "RunnerName": "Big Card (7,8,9) - 1",
+            "SelectionId": "2"
+          },
+          {
+            "RunnerName": "Big Card (7,8,9) - 2",
+            "SelectionId": "3"
+          },
+            {
+            "RunnerName": "Big Card (7,8,9) - 3",
+            "SelectionId": "4"
+          },
+            {
+            "RunnerName": "Big Card (7,8,9) - 4",
+            "SelectionId": "5"
+          },
+           {
+            "RunnerName": "Big Card (7,8,9) - 5",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Zero Card",
+        "Runners": [
+          {
+            "RunnerName": "Zero Card - 1",
+            "SelectionId": "7"
+          },
+          {
+            "RunnerName": "Zero Card - 2",
+            "SelectionId": "8"
+          },
+           {
+            "RunnerName": "Zero Card - 3",
+            "SelectionId": "9"
+          },
+           {
+            "RunnerName": "Zero Card - 4",
+            "SelectionId": "10"
+          },
+           {
+            "RunnerName": "Zero Card - 5",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Any Zero",
+        "Runners": [
+          {
+            "RunnerName": "Any Zero",
+            "SelectionId": "12"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["A", "B"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:42.677Z"
+  }
+}

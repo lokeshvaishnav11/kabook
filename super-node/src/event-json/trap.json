@@ -1,0 +1,171 @@
+{
+    "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+    "title": "The Trap",
+    "slug": "trap",
+    "order": 15,
+    "match_id": 93,
+    "status": 1,
+    "id": 3093,
+    "event_data": {
+        "match_id": "93",
+        "title": "The Trap",
+        "autotime": "0",
+        "remark": "",
+        "gtype": "trap",
+        "min": 100,
+        "max": 500000,
+        "C1": "1",
+        "C2": "1",
+        "C3": "1",
+        "market": [
+            {
+                "MarketName": "Player A",
+                "Runners": [
+                    {
+                        "RunnerName": "Player A",
+                        "SelectionId": "1"
+                    }
+                ]
+            },
+            {
+                "MarketName": "Player B",
+                "Runners": [
+                    {
+                        "RunnerName": "Player B",
+                        "SelectionId": "2"
+                    }
+                ]
+            },
+            {
+                "MarketName": "Low High",
+                "Runners": [
+                    {
+                        "RunnerName": "Card 1",
+                        "SelectionId": "3"
+                    },
+                    {
+                        "RunnerName": "Card 2",
+                        "SelectionId": "4"
+                    },
+                    {
+                        "RunnerName": "Card 3",
+                        "SelectionId": "5"
+                    },
+                    {
+                        "RunnerName": "Card 4",
+                        "SelectionId": "6"
+                    },
+                    {
+                        "RunnerName": "Card 5",
+                        "SelectionId": "7"
+                    },
+                    {
+                        "RunnerName": "Card 6",
+                        "SelectionId": "8"
+                    },
+                    {
+                        "RunnerName": "Card 7",
+                        "SelectionId": "9"
+                    },
+                    {
+                        "RunnerName": "Card 8",
+                        "SelectionId": "10"
+                    },
+                    {
+                        "RunnerName": "Card 9",
+                        "SelectionId": "11"
+                    },
+                    {
+                        "RunnerName": "Card 10",
+                        "SelectionId": "12"
+                    },
+                    {
+                        "RunnerName": "Card 11",
+                        "SelectionId": "13"
+                    },
+                    {
+                        "RunnerName": "Card 12",
+                        "SelectionId": "14"
+                    },
+                    {
+                        "RunnerName": "Card 13",
+                        "SelectionId": "15"
+                    },
+                    {
+                        "RunnerName": "Card 14",
+                        "SelectionId": "16"
+                    }
+                ]
+            },
+            {
+                "MarketName": "JQK",
+                "Runners": [
+                 {
+                        "RunnerName": "Card 1",
+                        "SelectionId": "17"
+                    },
+                    {
+                        "RunnerName": "Card 2",
+                        "SelectionId": "18"
+                    },
+                    {
+                        "RunnerName": "Card 3",
+                        "SelectionId": "19"
+                    },
+                    {
+                        "RunnerName": "Card 4",
+                        "SelectionId": "20"
+                    },
+                    {
+                        "RunnerName": "Card 5",
+                        "SelectionId": "21"
+                    },
+                    {
+                        "RunnerName": "Card 6",
+                        "SelectionId": "22"
+                    },
+                    {
+                        "RunnerName": "Card 7",
+                        "SelectionId": "23"
+                    },
+                    {
+                        "RunnerName": "Card 8",
+                        "SelectionId": "24"
+                    },
+                    {
+                        "RunnerName": "Card 9",
+                        "SelectionId": "25"
+                    },
+                    {
+                        "RunnerName": "Card 10",
+                        "SelectionId": "26"
+                    },
+                    {
+                        "RunnerName": "Card 11",
+                        "SelectionId": "27"
+                    },
+                    {
+                        "RunnerName": "Card 12",
+                        "SelectionId": "28"
+                    },
+                    {
+                        "RunnerName": "Card 13",
+                        "SelectionId": "29"
+                    },
+                    {
+                        "RunnerName": "Card 14",
+                        "SelectionId": "30"
+                    }
+                ]
+            }
+        ],
+        "RunnerName": [
+            "Player A",
+            "Player B"
+        ]
+    },
+    "isDisable": false,
+    "updatedAt": {
+        "$date": "2023-10-26T03:53:39.883Z"
+    }
+}

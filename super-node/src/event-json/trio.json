@@ -1,0 +1,137 @@
+{
+ 
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Trio",
+  "slug": "trio",
+  "order": 2,
+  "match_id": 80,
+  "status": 1,
+  "id": 3080,
+  "event_data": {
+    "match_id": "80",
+    "title": "Trio",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "trio",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Session",
+        "Runners": [
+          {
+            "RunnerName": "Session",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "3 Card Judgement(1 2 4)",
+        "Runners": [
+          {
+            "RunnerName": "3 Card Judgement(1 2 4)",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "3 Card Judgement(J Q K)",
+        "Runners": [
+          {
+            "RunnerName": "3 Card Judgement(J Q K)",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Two Red Only",
+        "Runners": [
+          {
+            "RunnerName": "Two Red Only",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Two Black Only",
+        "Runners": [
+          {
+            "RunnerName": "Two Black Only",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Two Odd Only",
+        "Runners": [
+          {
+            "RunnerName": "Two Odd Only",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Two Even Only",
+        "Runners": [
+          {
+            "RunnerName": "Two Even Only",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Pair",
+        "Runners": [
+          {
+            "RunnerName": "Pair",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Flush",
+        "Runners": [
+          {
+            "RunnerName": "Flush",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Straight",
+        "Runners": [
+          {
+            "RunnerName": "Straight",
+            "SelectionId": "10"
+          }
+        ]
+      },
+      {
+        "MarketName": "Trio",
+        "Runners": [
+          {
+            "RunnerName": "Trio",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Straight Flush",
+        "Runners": [
+          {
+            "RunnerName": "Straight Flush",
+            "SelectionId": "12"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["A", "B"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:42.677Z"
+  }
+}

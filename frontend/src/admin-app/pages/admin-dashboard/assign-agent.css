@@ -1,0 +1,95 @@
+.previlage-box {
+    background-color: #ececec;
+    border: 1px solid #ddd;
+  }
+
+  .previlage-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #dfdddd; */
+    padding: 10px;
+  }
+
+  
+.previlages h4 {
+    width: 100%;
+  }
+  
+  .previlage-item {
+    min-width: 180px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .previlage-master {
+    text-align: right;
+  }
+  
+  .previlage-master .form-group {
+    display: inline-block;
+  }
+  
+  .previlage-master .form-group input {
+    width: auto;
+    display: inline-block;
+  }
+
+  
+.create-account-container table {
+    width: 100%;
+  }
+  
+  .create-account-container td,
+  .create-account-container th {
+    white-space: nowrap;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .create-account-container td .btn {
+    padding: 4px 10px;
+  }
+  
+  .create-account-container .fixed-col-1 {
+    position: absolute;
+    left: 0;
+    width: 150px;
+  }
+  
+  .create-account-container .fixed-col-2 {
+    position: absolute;
+    left: 150px;
+    width: 150px;
+  }
+  
+  .create-account-container .fixed-col-3 {
+    position: absolute;
+    left: 300px;
+    width: 150px;
+  }
+  
+  .create-account-container .outer {
+    position: relative;
+  }
+  
+  .create-account-container .inner {
+    overflow-x: scroll;
+    overflow-y: visible;
+    margin-left: 450px;
+  }
+  
+  .security-auth .casino-report-tabs .nav-tabs {
+    justify-content: center;
+    border-bottom: 1px solid #ced4da;
+  }
+
+  .security-auth .casino-report-tabs .nav {
+   
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  

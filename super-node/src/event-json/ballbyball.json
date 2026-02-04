@@ -1,0 +1,68 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Ball by Ball",
+  "slug": "ballbyball",
+  "order": 17,
+  "match_id": 79,
+  "status": 1,
+  "id": 3079,
+  "event_data": {
+    "match_id": "79",
+    "title": "Ball by Ball",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "ballbyball",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Bookmaker",
+        "Runners": [
+          {
+            "RunnerName": "0 Runs",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "1 Runs",
+            "SelectionId": "2"
+          },
+          {
+            "RunnerName": "2 Runs",
+            "SelectionId": "3"
+          },
+           {
+            "RunnerName": "3 Runs",
+            "SelectionId": "4"
+          },
+          {
+            "RunnerName": "4 Runs",
+            "SelectionId": "5"
+          },
+          {
+            "RunnerName": "6 Runs",
+            "SelectionId": "6"
+          },
+          {
+            "RunnerName": "Boundary",
+            "SelectionId": "17"
+          },
+          {
+            "RunnerName": "Wicket",
+            "SelectionId": "18"
+          },
+          {
+            "RunnerName": "Extra Runs",
+            "SelectionId": "19"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

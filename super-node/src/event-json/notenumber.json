@@ -1,0 +1,454 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Note Number",
+  "slug": "notenum",
+  "order": 12,
+  "match_id": 88,
+  "status": 1,
+  "id": 3088,
+  "event_data": {
+    "match_id": "88",
+    "title": "Note Number",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "notenum",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Odd Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 1",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 2",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 3",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 4",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 5",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Odd Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Odd Card 6",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 1",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 2",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 3",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 4",
+            "SelectionId": "10"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 5",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Even Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Even Card 6",
+            "SelectionId": "12"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 1",
+
+            "SelectionId": "13"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 2",
+
+            "SelectionId": "14"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 3",
+
+            "SelectionId": "15"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 4",
+
+            "SelectionId": "16"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 5",
+
+            "SelectionId": "17"
+          }
+        ]
+      },
+      {
+        "MarketName": "Black Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Black Card 6",
+
+            "SelectionId": "18"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 1",
+            "SelectionId": "19"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 2",
+            "SelectionId": "20"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 3",
+
+            "SelectionId": "21"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 4",
+
+            "SelectionId": "22"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 5",
+
+            "SelectionId": "23"
+          }
+        ]
+      },
+      {
+        "MarketName": "Red Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Red Card 6",
+
+            "SelectionId": "24"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 1",
+
+            "SelectionId": "25"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 2",
+
+            "SelectionId": "26"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 3",
+
+            "SelectionId": "27"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 4",
+
+            "SelectionId": "28"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 5",
+
+            "SelectionId": "29"
+          }
+        ]
+      },
+      {
+        "MarketName": "Low Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Low Card 6",
+
+            "SelectionId": "30"
+          }
+        ]
+      },
+      {
+        "MarketName": "High Card 1",
+        "Runners": [
+          {
+            "RunnerName": "High Card 1",
+
+            "SelectionId": "31"
+          }
+        ]
+      },
+       {
+        "MarketName": "High Card 2",
+        "Runners": [
+          {
+            "RunnerName": "High Card 2",
+
+            "SelectionId": "32"
+          }
+        ]
+      },
+       {
+        "MarketName": "High Card 3",
+        "Runners": [
+          {
+            "RunnerName": "High Card 3",
+
+            "SelectionId": "33"
+          }
+        ]
+      },
+       {
+        "MarketName": "High Card 4",
+        "Runners": [
+          {
+            "RunnerName": "High Card 4",
+
+            "SelectionId": "34"
+          }
+        ]
+      },
+       {
+        "MarketName": "High Card 5",
+        "Runners": [
+          {
+            "RunnerName": "High Card 5",
+
+            "SelectionId": "35"
+          }
+        ]
+      },
+       {
+        "MarketName": "High Card 6",
+        "Runners": [
+          {
+            "RunnerName": "High Card 6",
+
+            "SelectionId": "36"
+          }
+        ]
+      },
+      {
+        "MarketName": "Baccarat 1",
+        "Runners": [
+          {
+            "RunnerName": "Baccarat 1",
+
+            "SelectionId": "37"
+          }
+        ]
+      },
+      {
+        "MarketName": "Baccarat 2",
+        "Runners": [
+          {
+            "RunnerName": "Baccarat 2",
+
+            "SelectionId": "38"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Card 1",
+
+            "SelectionId": "39"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Card 2",
+
+            "SelectionId": "40"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Card 3",
+
+            "SelectionId": "41"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Card 4",
+
+            "SelectionId": "42"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Card 5",
+
+            "SelectionId": "43"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Card 6",
+
+            "SelectionId": "44"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["Odd", "Even", "Red", "Black", "Low", "High", "Baccarat 1", "Baccarat 2", "Card"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:49.265Z"
+  }
+}

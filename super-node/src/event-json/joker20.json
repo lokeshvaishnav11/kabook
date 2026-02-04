@@ -1,0 +1,112 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Teenpatti Joker 20-20",
+  "slug": "joker20",
+  "order": 23,
+  "match_id": 84,
+  "status": 1,
+  "id": 3084,
+  "event_data": {
+    "match_id": "84",
+    "title": "Teenpatti Joker 20-20",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "joker20",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Bookmaker",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Even",
+        "Runners": [
+          {
+            "RunnerName": "Joker Even",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Odd",
+        "Runners": [
+          {
+            "RunnerName": "Joker Odd",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Red",
+        "Runners": [
+          {
+            "RunnerName": "Joker Red",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Black",
+        "Runners": [
+          {
+            "RunnerName": "Joker Black",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Spade",
+        "Runners": [
+          {
+            "RunnerName": "Joker Spade",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Heart",
+        "Runners": [
+          {
+            "RunnerName": "Joker Heart",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Diamond",
+        "Runners": [
+          {
+            "RunnerName": "Joker Diamond",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Joker Club",
+        "Runners": [
+          {
+            "RunnerName": "Joker Club",
+            "SelectionId": "10"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "Player A",
+      "Player B"
+    ]
+  }
+}

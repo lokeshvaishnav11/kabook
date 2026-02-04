@@ -1,0 +1,259 @@
+{
+  "_id": {
+    "$oid": "63a53fd2eeeb33a4ad240856"
+  },
+  "image": "https://dzm0kbaskt4pv.cloudfront.net/v11/static/front/img/casinoicons/img/lucky7.jpg",
+  "title": "Dolidana",
+  "slug": "dolidana",
+  "order": 28,
+  "match_id": 97,
+  "status": 1,
+  "id": 3097,
+  "event_data": {
+    "match_id": "97",
+    "title": "Dolidana",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "dolidana",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Any Pair",
+        "Runners": [
+          {
+            "RunnerName": "Any Pair",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "1-1 Pair",
+        "Runners": [
+          {
+            "RunnerName": "1-1 Pair",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "2-2 Pair",
+        "Runners": [
+          {
+            "RunnerName": "2-2 Pair",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "3-3 Pair",
+        "Runners": [
+          {
+            "RunnerName": "3-3 Pair",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "4-4 Pair",
+        "Runners": [
+          {
+            "RunnerName": "4-4 Pair",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "5-5 Pair",
+        "Runners": [
+          {
+            "RunnerName": "5-5 Pair",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "6-6 Pair",
+        "Runners": [
+          {
+            "RunnerName": "6-6 Pair",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Sum Total 2",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 2",
+            "SelectionId": "10"
+          }
+        ]
+      },
+      {
+        "MarketName": "Sum Total 3",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 3",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Sum Total 4",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 4",
+            "SelectionId": "12"
+          }
+        ]
+      },
+      {
+        "MarketName": "Sum Total 5",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 5",
+            "SelectionId": "13"
+          }
+        ]
+      },
+      {
+        "MarketName": "Sum Total 6",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 6",
+            "SelectionId": "14"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 7",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 7",
+            "SelectionId": "15"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 8",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 8",
+            "SelectionId": "16"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 9",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 9",
+            "SelectionId": "17"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 10",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 10",
+            "SelectionId": "18"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 11",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 11",
+            "SelectionId": "19"
+          }
+        ]
+      },
+       {
+        "MarketName": "Sum Total 12",
+        "Runners": [
+          {
+            "RunnerName": "Sum Total 12",
+            "SelectionId": "20"
+          }
+        ]
+      },
+       {
+        "MarketName": "Odd",
+        "Runners": [
+          {
+            "RunnerName": "Odd",
+            "SelectionId": "21"
+          }
+        ]
+      },
+       {
+        "MarketName": "Even",
+        "Runners": [
+          {
+            "RunnerName": "Even",
+            "SelectionId": "22"
+          }
+        ]
+      },
+       {
+        "MarketName": "Lucky7",
+        "Runners": [
+          {
+            "RunnerName": "Lucky7",
+            "SelectionId": "23"
+          }
+        ]
+      },
+       {
+        "MarketName": "Greater than 7",
+        "Runners": [
+          {
+            "RunnerName": "Greater than 7",
+            "SelectionId": "24"
+          }
+        ]
+      },
+       {
+        "MarketName": "Less than 7",
+        "Runners": [
+          {
+            "RunnerName": "Less than 7",
+            "SelectionId": "25"
+          }
+        ]
+      }
+        ],
+    "RunnerName": [
+      "Mogambo",
+      "Daga / Teja"
+    ]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-15T13:17:28.684Z"
+  }
+}

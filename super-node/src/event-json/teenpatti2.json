@@ -1,0 +1,247 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Teenpatti - 2.0",
+  "slug": "teen6",
+  "order": 28,
+  "match_id": 90,
+  "status": 1,
+  "id": 3090,
+  "event_data": {
+    "match_id": "90",
+    "title": "Teenpatti - 2.0",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teen6",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Card 1",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Card 2",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Card 3",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Card 4",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Card 5",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Card 6",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Under 21",
+        "Runners": [
+          {
+            "RunnerName": "Player A Under 21",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Over 22",
+        "Runners": [
+          {
+            "RunnerName": "Player A Over 22",
+            "SelectionId": "10"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Under 21",
+        "Runners": [
+          {
+            "RunnerName": "Player B Under 21",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Over 22",
+        "Runners": [
+          {
+            "RunnerName": "Player B Over 22",
+            "SelectionId": "12"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Card 1",
+            "SelectionId": "13"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Card 2",
+            "SelectionId": "14"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Card 3",
+            "SelectionId": "15"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Card 4",
+            "SelectionId": "16"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Card 5",
+            "SelectionId": "17"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Card 6",
+            "SelectionId": "18"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Card 1",
+            "SelectionId": "19"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Card 2",
+            "SelectionId": "20"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Card 3",
+            "SelectionId": "21"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Card 4",
+            "SelectionId": "22"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Card 5",
+            "SelectionId": "23"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Card 6",
+            "SelectionId": "24"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-15T13:17:28.684Z"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "20-20 Teenpatti C",
+  "slug": "teen20c",
+  "order": 17,
+  "match_id": 71,
+  "status": 1,
+  "id": 3071,
+  "event_data": {
+    "match_id": "11",
+    "title": "20-20 Teenpatti C",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teen20c",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "Pair plus A",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "3 Baccarat A",
+            "SelectionId": "5"
+          },
+          {
+            "RunnerName": "Red A",
+            "SelectionId": "7"
+          },
+          {
+            "RunnerName": "Black A",
+            "SelectionId": "8"
+          },
+          {
+            "RunnerName": "Total A",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          },
+            {
+            "RunnerName": "Pair plus B",
+            "SelectionId": "4"
+          },
+            {
+            "RunnerName": "3 Baccarat B",
+            "SelectionId": "6"
+          },
+           {
+            "RunnerName": "Red B",
+            "SelectionId": "9"
+          },
+            {
+            "RunnerName": "Black B",
+            "SelectionId": "10"
+          },
+           {
+            "RunnerName": "Total B",
+            "SelectionId": "12"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

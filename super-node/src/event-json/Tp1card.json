@@ -1,0 +1,70 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "2 Cards Teenpatti",
+  "slug": "patti2",
+  "order": 17,
+  "match_id": 74,
+  "status": 1,
+  "id": 3074,
+  "event_data": {
+    "match_id": "74",
+    "title": "2 Cards Teenpatti",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "patti2",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "Total A",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "Mini Baccarat A",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          },
+            {
+            "RunnerName": "Total B",
+            "SelectionId": "4"
+          },
+            {
+            "RunnerName": "Mini Baccarat B",
+            "SelectionId": "6"
+          }
+        ]
+      },
+       {
+        "MarketName": "Color Plus",
+        "Runners": [
+          {
+            "RunnerName": "Color Plus",
+            "SelectionId": "7"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

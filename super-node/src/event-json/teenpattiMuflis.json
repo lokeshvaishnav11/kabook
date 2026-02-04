@@ -1,0 +1,61 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Teenpatti Muflis",
+  "slug": "teenmuf",
+  "order": 17,
+  "match_id": 73,
+  "status": 1,
+  "id": 3073,
+  "event_data": {
+    "match_id": "73",
+    "title": "Teenpatti Muflis",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teenmuf",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "Top 9 A",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "M Baccarat A",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          },
+            {
+            "RunnerName": "Top 9 B",
+            "SelectionId": "4"
+          },
+            {
+            "RunnerName": "M Baccarat B",
+            "SelectionId": "6"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

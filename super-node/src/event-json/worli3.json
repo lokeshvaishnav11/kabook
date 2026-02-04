@@ -1,0 +1,27 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Matka",
+  "slug": "worli3",
+  "order": 1,
+  "match_id": 99,
+  "status": 1,
+  "id": 3099,
+  "event_data": {
+    "match_id": "99",
+    "title": "Matka",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "worli3",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [],
+    "RunnerName": []
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-15T13:17:28.684Z"
+  }
+}

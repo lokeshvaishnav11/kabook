@@ -1,0 +1,78 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "29Card Baccarat",
+  "slug": "teensin",
+  "order": 17,
+  "match_id": 75,
+  "status": 1,
+  "id": 3075,
+  "event_data": {
+    "match_id": "75",
+    "title": "29Card Baccarat",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teensin",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Winner",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "High Card A",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "Pair A",
+            "SelectionId": "5"
+          },
+          {
+            "RunnerName": "Color Plus A",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Winner",
+            "SelectionId": "2"
+          },
+            {
+            "RunnerName": "High Card B",
+            "SelectionId": "4"
+          },
+            {
+            "RunnerName": "Pair B",
+            "SelectionId": "6"
+          },
+           {
+            "RunnerName": "Color Plus 8",
+            "SelectionId": "8"
+          }
+        ]
+      },
+       {
+        "MarketName": "Lucky 9",
+        "Runners": [
+          {
+            "RunnerName": "Lucky 9",
+            "SelectionId": "9"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

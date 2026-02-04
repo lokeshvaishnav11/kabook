@@ -1,0 +1,46 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "1 Card Meter",
+  "slug": "cmeter1",
+  "order": 12,
+  "match_id": 83,
+  "status": 1,
+  "id": 3083,
+  "event_data": {
+    "match_id": "85",
+    "title": "1 Card Meter",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "cmeter1",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Fighter A",
+        "Runners": [
+          {
+            "RunnerName": "Low",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Fighter B",
+        "Runners": [
+          {
+            "RunnerName": "High",
+            "SelectionId": "2"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["A", "B"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:49.265Z"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_id": {
+    "$oid": "63a53fd2eeeb33a4ad240856"
+  },
+  "image": "https://dzm0kbaskt4pv.cloudfront.net/v11/static/front/img/casinoicons/img/lucky7.jpg",
+  "title": "Mogambo",
+  "slug": "mogambo",
+  "order": 28,
+  "match_id": 96,
+  "status": 1,
+  "id": 3096,
+  "event_data": {
+    "match_id": "96",
+    "title": "Mogambo",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "mogambo",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Mogambo",
+        "Runners": [
+          {
+            "RunnerName": "Mogambo",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Daga / Teja",
+        "Runners": [
+          {
+            "RunnerName": "Daga / Teja",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "3 Card Total",
+        "Runners": [
+          {
+            "RunnerName": "3 Card Total",
+            "SelectionId": "3"
+          }
+        ]
+      }
+        ],
+    "RunnerName": [
+      "Mogambo",
+      "Daga / Teja"
+    ]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-15T13:17:28.684Z"
+  }
+}

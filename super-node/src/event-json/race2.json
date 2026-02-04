@@ -1,0 +1,64 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Race to 2nd",
+  "slug": "race2",
+  "order": 12,
+  "match_id": 86,
+  "status": 1,
+  "id": 3086,
+  "event_data": {
+    "match_id": "86",
+    "title": "Race to 2nd",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "race2",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player C",
+        "Runners": [
+          {
+            "RunnerName": "Player C",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player D",
+        "Runners": [
+          {
+            "RunnerName": "Player D",
+            "SelectionId": "4"
+          }
+        ]
+      }
+    ],
+    "RunnerName": ["A", "B"]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-14T13:30:49.265Z"
+  }
+}

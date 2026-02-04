@@ -1,0 +1,81 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "1 CARD ONE-DAY",
+  "slug": "teen1",
+  "order": 23,
+  "match_id": 86,
+  "status": 1,
+  "id": 3086,
+  "event_data": {
+    "match_id": "86",
+    "title": "1 CARD ONE-DAY",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teen1",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player",
+        "Runners": [
+          {
+            "RunnerName": "Player",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Dealer",
+        "Runners": [
+          {
+            "RunnerName": "Dealer",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "7 Up Player",
+        "Runners": [
+          {
+            "RunnerName": "7 Up Player",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "7 Down Player",
+        "Runners": [
+          {
+            "RunnerName": "7 Down Player",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "7 Up Dealer",
+        "Runners": [
+          {
+            "RunnerName": "7 Up Dealer",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "7 Down Dealer",
+        "Runners": [
+          {
+            "RunnerName": "7 Down Dealer",
+            "SelectionId": "6"
+          }
+        ]
+      }
+    ],
+    "RunnerName": [
+      "Player A",
+      "Player B"
+    ]
+  }
+}

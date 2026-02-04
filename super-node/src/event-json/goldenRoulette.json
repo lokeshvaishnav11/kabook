@@ -1,0 +1,618 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "Golden Roulette",
+  "slug": "roulette11",
+  "order": 9,
+  "match_id": 95,
+  "status": 1,
+  "id": 3095,
+  "event_data": {
+    "match_id": "95",
+    "title": "Golden Roulette",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "roulette11",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Number",
+        "Runners": [
+          {
+            "RunnerName": "0",
+            "SelectionId": "1"
+          },
+          {
+            "RunnerName": "1",
+            "SelectionId": "2"
+          },
+          {
+            "RunnerName": "2",
+            "SelectionId": "3"
+          },
+          {
+            "RunnerName": "3",
+            "SelectionId": "4"
+          },
+          {
+            "RunnerName": "4",
+            "SelectionId": "5"
+          },
+          {
+            "RunnerName": "5",
+            "SelectionId": "6"
+          },
+          {
+            "RunnerName": "6",
+            "SelectionId": "7"
+          },
+          {
+            "RunnerName": "7",
+            "SelectionId": "8"
+          },
+          
+          {
+            "RunnerName": "8",
+            "SelectionId": "9"
+          },
+          {
+            "RunnerName": "9",
+            "SelectionId": "10"
+          } ,
+          {
+            "RunnerName": "10",
+            "SelectionId": "11"
+          } ,
+          {
+            "RunnerName": "11",
+            "SelectionId": "12"
+          } ,
+          {
+            "RunnerName": "12",
+            "SelectionId": "13"
+          } ,
+          {
+            "RunnerName": "13",
+            "SelectionId": "14"
+          } ,
+          {
+            "RunnerName": "14",
+            "SelectionId": "15"
+          } ,
+          {
+            "RunnerName": "15",
+            "SelectionId": "16"
+          } ,
+          {
+            "RunnerName": "16",
+            "SelectionId": "17"
+          } ,
+          {
+            "RunnerName": "17",
+            "SelectionId": "18"
+          } ,
+          {
+            "RunnerName": "18",
+            "SelectionId": "19"
+          } ,
+          {
+            "RunnerName": "19",
+            "SelectionId": "20"
+          } ,
+          {
+            "RunnerName": "20",
+            "SelectionId": "21"
+          } ,
+          {
+            "RunnerName": "21",
+            "SelectionId": "22"
+          } ,
+          {
+            "RunnerName": "22",
+            "SelectionId": "23"
+          } ,
+          {
+            "RunnerName": "23",
+            "SelectionId": "24"
+          } ,
+          {
+            "RunnerName": "24",
+            "SelectionId": "25"
+          } ,
+          {
+            "RunnerName": "25",
+            "SelectionId": "26"
+          } ,
+          {
+            "RunnerName": "26",
+            "SelectionId": "27"
+          } ,
+          {
+            "RunnerName": "27",
+            "SelectionId": "28"
+          } ,
+          {
+            "RunnerName": "28",
+            "SelectionId": "29"
+          } ,
+          {
+            "RunnerName": "29",
+            "SelectionId": "30"
+          } ,
+          {
+            "RunnerName": "30",
+            "SelectionId": "31"
+          } ,
+          {
+            "RunnerName": "31",
+            "SelectionId": "32"
+          } ,
+          {
+            "RunnerName": "32",
+            "SelectionId": "33"
+          } ,
+          {
+            "RunnerName": "33",
+            "SelectionId": "34"
+          } ,
+          {
+            "RunnerName": "34",
+            "SelectionId": "35"
+          } ,
+          {
+            "RunnerName": "35",
+            "SelectionId": "36"
+          } ,
+          {
+            "RunnerName": "36",
+            "SelectionId": "37"
+          } ,
+          {
+            "RunnerName": "0,1",
+            "SelectionId": "38"
+          } ,
+          {
+            "RunnerName": "0,2",
+            "SelectionId": "39"
+          } ,
+          {
+            "RunnerName": "0,3",
+            "SelectionId": "40"
+          } ,
+          {
+            "RunnerName": "1,4",
+            "SelectionId": "41"
+          } ,
+          {
+            "RunnerName": "4,7",
+            "SelectionId": "42"
+          } ,
+          {
+            "RunnerName": "7,10",
+            "SelectionId": "43"
+          } ,
+          {
+            "RunnerName": "10,13",
+            "SelectionId": "44"
+          } ,
+          {
+            "RunnerName": "13,16",
+            "SelectionId": "45"
+          } ,
+          {
+            "RunnerName": "16,19",
+            "SelectionId": "46"
+          } ,
+          {
+            "RunnerName": "19,22",
+            "SelectionId": "47"
+          } ,
+          {
+            "RunnerName": "22,25",
+            "SelectionId": "48"
+          } ,
+          {
+            "RunnerName": "25,28",
+            "SelectionId": "49"
+          } ,
+          {
+            "RunnerName": "28,31",
+            "SelectionId": "50"
+          } ,
+          {
+            "RunnerName": "31,34",
+            "SelectionId": "51"
+          } ,
+          {
+            "RunnerName": "2,5",
+            "SelectionId": "52"
+          } ,
+          {
+            "RunnerName": "5,8",
+            "SelectionId": "53"
+          } ,
+          {
+            "RunnerName": "8,11",
+            "SelectionId": "54"
+          } ,
+          {
+            "RunnerName": "11,14",
+            "SelectionId": "55"
+          } ,
+          {
+            "RunnerName": "14,17",
+            "SelectionId": "56"
+          } ,
+          {
+            "RunnerName": "17,20",
+            "SelectionId": "57"
+          } ,
+          {
+            "RunnerName": "20,23",
+            "SelectionId": "58"
+          } ,
+          {
+            "RunnerName": "23,26",
+            "SelectionId": "59"
+          } ,
+          {
+            "RunnerName": "26,29",
+            "SelectionId": "60"
+          } ,
+          {
+            "RunnerName": "29,32",
+            "SelectionId": "61"
+          } ,
+          {
+            "RunnerName": "32,35",
+            "SelectionId": "62"
+          } ,
+          {
+            "RunnerName": "3,6",
+            "SelectionId": "63"
+          } ,
+          {
+            "RunnerName": "6,9",
+            "SelectionId": "64"
+          } ,
+          {
+            "RunnerName": "9,12",
+            "SelectionId": "65"
+          } ,
+          {
+            "RunnerName": "12,15",
+            "SelectionId": "66"
+          } ,
+          {
+            "RunnerName": "15,18",
+            "SelectionId": "67"
+          } ,
+          {
+            "RunnerName": "18,21",
+            "SelectionId": "68"
+          } ,
+          {
+            "RunnerName": "21,24",
+            "SelectionId": "69"
+          } ,
+          {
+            "RunnerName": "24,27",
+            "SelectionId": "70"
+          } ,
+          {
+            "RunnerName": "27,30",
+            "SelectionId": "71"
+          } ,
+          {
+            "RunnerName": "30,33",
+            "SelectionId": "72"
+          } ,
+          {
+            "RunnerName": "33,36",
+            "SelectionId": "73"
+          } ,
+          {
+            "RunnerName": "1,2",
+            "SelectionId": "74"
+          } ,
+          {
+            "RunnerName": "2,3",
+            "SelectionId": "75"
+          } ,
+          {
+            "RunnerName": "4,5",
+            "SelectionId": "76"
+          } ,
+          {
+            "RunnerName": "5,6",
+            "SelectionId": "77"
+          } ,
+          {
+            "RunnerName": "7,8",
+            "SelectionId": "78"
+          } ,
+          {
+            "RunnerName": "8,9",
+            "SelectionId": "79"
+          } ,
+          {
+            "RunnerName": "10,11",
+            "SelectionId": "80"
+          } ,
+          {
+            "RunnerName": "11,12",
+            "SelectionId": "81"
+          } ,
+          {
+            "RunnerName": "13,14",
+            "SelectionId": "82"
+          } ,
+          {
+            "RunnerName": "14,15",
+            "SelectionId": "83"
+          } ,
+          {
+            "RunnerName": "16,17",
+            "SelectionId": "84"
+          } ,
+          {
+            "RunnerName": "17,18",
+            "SelectionId": "85"
+          } ,
+          {
+            "RunnerName": "19,20",
+            "SelectionId": "86"
+          } ,
+          {
+            "RunnerName": "20,21",
+            "SelectionId": "87"
+          } ,
+          {
+            "RunnerName": "22,23",
+            "SelectionId": "88"
+          } ,
+          {
+            "RunnerName": "23,24",
+            "SelectionId": "89"
+          } ,
+          {
+            "RunnerName": "25,26",
+            "SelectionId": "90"
+          } ,
+          {
+            "RunnerName": "26,27",
+            "SelectionId": "91"
+          } ,
+          {
+            "RunnerName": "28,29",
+            "SelectionId": "92"
+          } ,
+          {
+            "RunnerName": "29,30",
+            "SelectionId": "93"
+          } ,
+          {
+            "RunnerName": "31,32",
+            "SelectionId": "94"
+          } ,
+          {
+            "RunnerName": "32,33",
+            "SelectionId": "95"
+          } ,
+          {
+            "RunnerName": "34,35",
+            "SelectionId": "96"
+          } ,
+          {
+            "RunnerName": "35,36",
+            "SelectionId": "97"
+          } ,
+          {
+            "RunnerName": "1,2,3",
+            "SelectionId": "98"
+          } ,
+          {
+            "RunnerName": "4,5,6",
+            "SelectionId": "99"
+          } ,
+          {
+            "RunnerName": "7,8,9",
+            "SelectionId": "100"
+          } ,
+          {
+            "RunnerName": "10,11,12",
+            "SelectionId": "101"
+          } ,
+          {
+            "RunnerName": "13,14,15",
+            "SelectionId": "102"
+          } ,
+          {
+            "RunnerName": "16,17,18",
+            "SelectionId": "103"
+          } ,
+          {
+            "RunnerName": "19,20,21",
+            "SelectionId": "104"
+          } ,
+          {
+            "RunnerName": "22,23,24",
+            "SelectionId": "105"
+          } ,
+          {
+            "RunnerName": "25,26,27",
+            "SelectionId": "106"
+          } ,
+          {
+            "RunnerName": "28,29,30",
+            "SelectionId": "107"
+          } ,
+          {
+            "RunnerName": "31,32,33",
+            "SelectionId": "108"
+          } ,
+          {
+            "RunnerName": "34,35,36",
+            "SelectionId": "109"
+          } ,
+          {
+            "RunnerName": "0,1,2,3",
+            "SelectionId": "110"
+          } ,
+          {
+            "RunnerName": "1,2,4,5",
+            "SelectionId": "111"
+          } ,
+          {
+            "RunnerName": "2,3,5,6",
+            "SelectionId": "112"
+          } ,
+          {
+            "RunnerName": "4,5,7,8",
+            "SelectionId": "113"
+          } ,
+          {
+            "RunnerName": "5,6,8,9",
+            "SelectionId": "114"
+          } ,
+          {
+            "RunnerName": "7,8,10,11",
+            "SelectionId": "115"
+          } ,
+          {
+            "RunnerName": "8,9,11,12",
+            "SelectionId": "116"
+          } ,
+          {
+            "RunnerName": "10,11,13,14",
+            "SelectionId": "117"
+          } ,
+          {
+            "RunnerName": "11,12,14,15",
+            "SelectionId": "118"
+          } ,
+          {
+            "RunnerName": "13,14,16,17",
+            "SelectionId": "119"
+          } ,
+          {
+            "RunnerName": "14,15,17,18",
+            "SelectionId": "120"
+          } ,
+          {
+            "RunnerName": "16,17,19,20",
+            "SelectionId": "121"
+          } ,
+          {
+            "RunnerName": "17,18,20,21",
+            "SelectionId": "122"
+          } ,
+          {
+            "RunnerName": "19,20,22,23",
+            "SelectionId": "123"
+          } ,
+          {
+            "RunnerName": "20,21,23,24",
+            "SelectionId": "124"
+          } ,
+          {
+            "RunnerName": "22,23,25,26",
+            "SelectionId": "125"
+          } ,
+          {
+            "RunnerName": "23,24,26,27",
+            "SelectionId": "126"
+          } ,
+          {
+            "RunnerName": "25,26,28,29",
+            "SelectionId": "127"
+          } ,
+          {
+            "RunnerName": "26,27,29,30",
+            "SelectionId": "128"
+          } ,
+          {
+            "RunnerName": "28,29,31,32",
+            "SelectionId": "129"
+          } ,
+          {
+            "RunnerName": "29,30,32,33",
+            "SelectionId": "130"
+          } ,
+          {
+            "RunnerName": "31,32,34,35",
+            "SelectionId": "131"
+          } ,
+          {
+            "RunnerName": "32,33,35,36",
+            "SelectionId": "132"
+          } ,
+          {
+            "RunnerName": "1st 12",
+            "SelectionId": "133"
+          } ,
+          {
+            "RunnerName": "2nd 12",
+            "SelectionId": "134"
+          } ,
+          {
+            "RunnerName": "3rd 12",
+            "SelectionId": "135"
+          } ,
+          {
+            "RunnerName": "1st column",
+            "SelectionId": "136"
+          } ,
+          {
+            "RunnerName": "2nd column",
+            "SelectionId": "137"
+          } ,
+          {
+            "RunnerName": "3rd column",
+            "SelectionId": "138"
+          } ,
+          {
+            "RunnerName": "1 to 18",
+            "SelectionId": "139"
+          } ,
+          {
+            "RunnerName": "19 to 36",
+            "SelectionId": "140"
+          } ,
+          {
+            "RunnerName": "Red",
+            "SelectionId": "141"
+          } ,
+          {
+            "RunnerName": "Black",
+            "SelectionId": "142"
+          } ,
+          {
+            "RunnerName": "Odd",
+            "SelectionId": "143"
+          } ,
+          {
+            "RunnerName": "Even",
+            "SelectionId": "144"
+          } ,
+          {
+            "RunnerName": "0,1,2",
+            "SelectionId": "145"
+          } ,
+          {
+            "RunnerName": "0,2,3",
+            "SelectionId": "146"
+          } 
+
+        ]
+      }
+    ],
+    "RunnerName": [
+      "A",
+      "B"
+    ]
+  }
+}

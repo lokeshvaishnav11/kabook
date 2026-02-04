@@ -1,0 +1,193 @@
+{
+  "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+  "title": "V VIP Teenpatti 1-day",
+  "slug": "teen62",
+  "order": 2,
+  "match_id": 98,
+  "status": 1,
+  "id": 3098,
+  "event_data": {
+    "match_id": "98",
+    "title": "V VIP Teenpatti 1-day",
+    "autotime": "0",
+    "remark": "",
+    "gtype": "teen62",
+    "min": 100,
+    "max": 500000,
+    "C1": "1",
+    "C2": "1",
+    "C3": "1",
+    "market": [
+      {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "1"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "2"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Spade",
+        "Runners": [
+          {
+            "RunnerName": "Player A Spade",
+            "SelectionId": "3"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Diamond",
+        "Runners": [
+          {
+            "RunnerName": "Player A Diamond",
+            "SelectionId": "4"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Club",
+        "Runners": [
+          {
+            "RunnerName": "Player A Club",
+            "SelectionId": "5"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player A Heart",
+        "Runners": [
+          {
+            "RunnerName": "Player A Heart",
+            "SelectionId": "6"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Spade",
+        "Runners": [
+          {
+            "RunnerName": "Player B Spade",
+            "SelectionId": "7"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Diamond",
+        "Runners": [
+          {
+            "RunnerName": "Player B Diamond",
+            "SelectionId": "8"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Club",
+        "Runners": [
+          {
+            "RunnerName": "Player B Club",
+            "SelectionId": "9"
+          }
+        ]
+      },
+      {
+        "MarketName": "Player B Heart",
+        "Runners": [
+          {
+            "RunnerName": "Player B Heart",
+            "SelectionId": "10"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 1",
+        "Runners": [
+          {
+            "RunnerName": "Card 1",
+            "SelectionId": "11"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 2",
+        "Runners": [
+          {
+            "RunnerName": "Card 2",
+            "SelectionId": "12"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 3",
+        "Runners": [
+          {
+            "RunnerName": "Card 3",
+            "SelectionId": "13"
+          }
+        ]
+      },
+      {
+        "MarketName": "Card 4",
+        "Runners": [
+          {
+            "RunnerName": "Card 4",
+            "SelectionId": "14"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 5",
+        "Runners": [
+          {
+            "RunnerName": "Card 5",
+            "SelectionId": "15"
+          }
+        ]
+      },
+       {
+        "MarketName": "Card 6",
+        "Runners": [
+          {
+            "RunnerName": "Card 6",
+            "SelectionId": "16"
+          }
+        ]
+      },
+       {
+        "MarketName": "Player A",
+        "Runners": [
+          {
+            "RunnerName": "Player A",
+            "SelectionId": "17"
+          }
+        ]
+      },
+       {
+        "MarketName": "Player B",
+        "Runners": [
+          {
+            "RunnerName": "Player B",
+            "SelectionId": "18"
+          }
+        ]
+      }
+        ],
+    "RunnerName": [
+      "Player A",
+      "Player B"
+    ]
+  },
+  "isDisable": false,
+  "updatedAt": {
+    "$date": "2023-10-15T13:17:28.684Z"
+  }
+}

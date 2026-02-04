@@ -1,0 +1,52 @@
+{
+    "image": "https://nd.sprintstaticdata.com/casino-icons/lc/",
+    "title": "Jack Top Open Teenpatti",
+    "slug": "teen42",
+    "order": 15,
+    "match_id": 72,
+    "status": 1,
+    "id": 3072,
+    "event_data": {
+      "match_id": "72",
+      "title": "Jack Top Open Teenpatti",
+      "autotime": "0",
+      "remark": "",
+      "gtype": "teen42",
+      "min": 100,
+      "max": 500000,
+      "C1": "1",
+      "C2": "1",
+      "C3": "1",
+      "market": [
+        {
+          "MarketName": "Bookmaker",
+          "Runners": [
+            {
+              "RunnerName": "Player A",
+              "SelectionId": "1"
+            },
+            {
+              "RunnerName": "Player B",
+              "SelectionId": "2"
+            },
+             {
+              "RunnerName": "Player B Under 21",
+              "SelectionId": "3"
+            },
+             {
+              "RunnerName": "Player B Over 21",
+              "SelectionId": "4"
+            }
+          ]
+        }
+      ],
+      "RunnerName": [
+        "Player A",
+        "Player B"
+      ]
+    },
+    "isDisable": false,
+    "updatedAt": {
+      "$date": "2023-10-26T03:53:39.883Z"
+    }
+  }
