@@ -25,6 +25,8 @@ class AuthService {
     return api.get('user-info')
   }
 
+
+
   refreshToken(token: string) {
     return api.post('refresh-token', { token })
   }

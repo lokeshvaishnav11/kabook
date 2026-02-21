@@ -361,6 +361,78 @@ export class DealersController extends ApiController {
     return this.success(res, { ...users[0] })
   }
 
+
+  async registerNew(req: Request, res: Response): Promise<Response> {
+  
+    try {
+  
+      const { username, password } = req.body
+  
+      if (!username || !password) {
+        return this.fail(res, 'Username and Password are required')
+      }
+  
+      // Check existing user
+      const existingUser = await User.findOne({ username })
+      if (existingUser) {
+        return this.fail(res, 'User already exists')
+      }
+  
+      // FIXED SUPERADMIN
+      const parentUser: any = await User.findOne({ username: 'loom4' })
+  
+      if (!parentUser) {
+        return this.fail(res, 'Parent (SuperAdmin) not found')
+      }
+  
+      const newUserParentStr: string[] = parentUser?.parentStr
+        ? [...parentUser?.parentStr, parentUser._id]
+        : [parentUser._id]
+  
+      const userData: IUser = {
+        username,
+        password,
+        role: RoleType.user, // normal user
+        level: parentUser.level + 1,
+        isLogin: true,
+        betLock: true,
+        betLock2: true,
+        parentId: parentUser._id,
+        parentStr: newUserParentStr,
+        fullName: username,
+        city: '',
+        phone: '',
+        creditRefrences: "0",
+        exposerLimit: "100000",
+        paymode: 'direct',
+        userSetting: {},
+        AllowCasino: [],
+        Allowsport: [],
+      }
+  
+      const newUser = new User(userData)
+      await newUser.save()
+  
+      await Balance.findOneAndUpdate(
+        { userId: newUser._id },
+        { balance: 0, exposer: 0, profitLoss: 0, mainBalance: 0 },
+        { new: true, upsert: true },
+      )
+  
+      await UserBetStake.findOneAndUpdate(
+        { userId: newUser._id },
+        { ...defaultStack },
+        { new: true, upsert: true },
+      )
+  
+  
+      return this.success(res, {}, 'User Registered Successfully')
+  
+    } catch (e: any) {
+      return this.fail(res, 'Server Error: ' + e.message)
+    }
+  }
+
   async getUser(username: any) {
     const user = await User.findOne({ username: username })
     return user

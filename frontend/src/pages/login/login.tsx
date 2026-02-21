@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../redux/hooks'
 import { loginAction } from '../../redux/actions/login/login.action'
 import { selectUserData } from '../../redux/actions/login/loginSlice'
 import { useWebsocketUser } from '../../context/webSocketUser'
-import { useNavigateCustom } from '../_layout/elements/custom-link'
+import { CustomLink, useNavigateCustom } from '../_layout/elements/custom-link'
 import { isMobile } from 'react-device-detect'
 import api from '../../utils/api'
 import SubmitButton from '../../components/SubmitButton'
@@ -152,7 +152,11 @@ const Login = () => {
                   </a>{' '}
                   apply.
                 </small>
+                
               </div>
+<div className='text-center mt-2'>
+            New User ?  <CustomLink to={"/register"}>Register Now</CustomLink></div>
+             
               <div className='mt-2 text-center download-apk'></div>
             </form>
           </div>
