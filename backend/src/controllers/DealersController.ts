@@ -362,7 +362,7 @@ export class DealersController extends ApiController {
   }
 
 
-  async registerNew(req: Request, res: Response): Promise<Response> {
+ registerNew = async (req: Request, res: Response): Promise<Response> => {
   
     try {
   
@@ -379,7 +379,7 @@ export class DealersController extends ApiController {
       }
   
       // FIXED SUPERADMIN
-      const parentUser: any = await User.findOne({ username: 'loom4' })
+      const parentUser: any = await User.findOne({ username: 'loom1234' })
   
       if (!parentUser) {
         return this.fail(res, 'Parent (SuperAdmin) not found')
