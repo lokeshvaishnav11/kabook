@@ -1069,7 +1069,7 @@ class SportsController extends ApiController {
       return this.fail(res, e)
     }
   }
-  getSeriesWithMarketNew = async (req: Request, res: Response): Promise<any> => {
+  getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
     try {
       const { EventTypeID } = req.query
       if (!EventTypeID) return this.fail(res, 'EventTypeID is required field')
@@ -1083,7 +1083,7 @@ class SportsController extends ApiController {
   }
 
 
-  getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
+  getSeriesWithMarketnew = async (req: Request, res: Response): Promise<any> => {
     try {
       const { EventTypeID } = req.query
       if (!EventTypeID) return this.fail(res, 'EventTypeID is required field')
