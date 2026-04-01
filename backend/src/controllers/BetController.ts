@@ -246,30 +246,30 @@ export class BetController extends ApiController {
       }
     }
   }
+  // placebet = async (req: Request, res: Response): Promise<Response> => {
+  //   try {
+  //     const betData = req.body
+  //     if (betData.stack != undefined) {
+  //       const user: any = req.user
+  //       const userId: any = user._id
+  //       betData['user_id'] = userId
+  //       const start = performance.now()
+  //       const response = await axios.post('http://127.0.0.1:5000/api/placebet', betData)
+  //       const end = performance.now()
+  //       console.log(response)
+  //       return this.success(
+  //         res,
+  //         { bet: betData, time: end - start, ...response.data },
+  //         'PLace Bet Successfully',
+  //       )
+  //     } else {
+  //       return this.fail(res, '')
+  //     }
+  //   } catch (e: any) {
+  //     return this.fail(res, e.stack)
+  //   }
+  // }
   placebet = async (req: Request, res: Response): Promise<Response> => {
-    try {
-      const betData = req.body
-      if (betData.stack != undefined) {
-        const user: any = req.user
-        const userId: any = user._id
-        betData['user_id'] = userId
-        const start = performance.now()
-        const response = await axios.post('http://127.0.0.1:5000/api/placebet', betData)
-        const end = performance.now()
-        console.log(response)
-        return this.success(
-          res,
-          { bet: betData, time: end - start, ...response.data },
-          'PLace Bet Successfully',
-        )
-      } else {
-        return this.fail(res, '')
-      }
-    } catch (e: any) {
-      return this.fail(res, e.stack)
-    }
-  }
-  placebetold = async (req: Request, res: Response): Promise<Response> => {
     try {
       const betData = req.body
       if (betData.stack != undefined) {
