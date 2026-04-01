@@ -43,6 +43,9 @@ export default interface User {
   logs?: string
   transactionPassword?: string
   selected?: boolean
+  firstre?: string
+  extra?: string
+  ekyc?: string
   [key: string]: any
 }
 

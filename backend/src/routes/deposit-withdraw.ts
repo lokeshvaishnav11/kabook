@@ -40,6 +40,14 @@ export class DepositWithdrawRoutes {
     )
 
     this.router.post(
+      '/get-payment-url',
+      Passport.authenticateJWT,
+     
+      Http.validateRequest,
+      this.DepositWithdrawController.getPaymentUrl,
+    )
+
+    this.router.post(
       '/add-upi',
       Passport.authenticateJWT,
       upiValidation,

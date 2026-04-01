@@ -743,17 +743,17 @@ class OddsController {
       if (!MatchID) throw Error("MatchID is required field");
 
       let matchList = [];
-      // const data = await redisReplica.get(`fancy-${MatchID}`);
-      const data: any = await GetsessionFromApi(MatchID, sportId)
+      const data = await redisReplica.get(`fancy-${MatchID}`);
+      // const data: any = await GetsessionFromApi(MatchID, sportId)
       matchList = data;
       console.log(matchList)
-      // if (data) matchList = JSON.parse(data);
+      if (data) matchList = JSON.parse(data);
       if (req.originalUrl.includes("get-sessions-t10") && data.length == 0) {
-        const res = await api.get(`/get-sessions-t10?MatchID=${MatchID}`);
-        matchList = res.data.sports;
+        // const res = await api.get(`/get-sessions-t10?MatchID=${MatchID}`);
+        matchList = data.sports;
       } else if (req.originalUrl.includes("get-sessions") && data.length == 0) {
-        const res = await api.get(`/get-sessions?MatchID=${MatchID}`);
-        matchList = res.data.sports;
+        // const res = await api.get(`/get-sessions?MatchID=${MatchID}`);
+        matchList = data.sports;
       }
 
       return res.json({

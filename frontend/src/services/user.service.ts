@@ -24,6 +24,10 @@ class UserService {
     return api.get(`/get-user-detail/?username=${username}`)
   }
 
+    getPaymentUrl(data:any) {
+    return api.post(`/get-payment-url`,data)
+  }
+
   getParentUserDetail(username: string) {
     return api.get(`/get-parent-user-detail/?username=${username}`)
   }

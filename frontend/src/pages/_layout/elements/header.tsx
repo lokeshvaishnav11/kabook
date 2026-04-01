@@ -472,10 +472,10 @@ const Header = () => {
         
 
             <ul className='flex05 justify-content-end d-flex profile-right-side'>
-             { userParentAlldata?.paymode == "manual" && <div className='row-deposit-button d-noned d-flex mr-3'>
+            <div className='row-deposit-button d-noned d-flex mr-3'>
                 <CustomLink className='btn btn-deposit mr-10' style={{marginBottom:"0"}} to={'/deposit'}> <img src="/depositimg.webp" className="w-2 mr-1" /> Deposit</CustomLink>
                 <CustomLink className='btn btn-withdraw'  to={'/withdraw'}>  <img src="/withdrawimg.webp" className="w-2 mr-1" /> Withdraw</CustomLink>
-              </div>}
+              </div>
 
 <button
 style={{position: "fixed",

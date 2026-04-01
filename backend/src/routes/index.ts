@@ -23,6 +23,7 @@ import SportsController from '../controllers/SportsController'
 import { DepositWithdrawRoutes } from './deposit-withdraw'
 import { CallbackRoutes } from './intcasino'
 import { DealersController } from '../controllers/DealersController'
+import { DepositWithdrawController } from '../controllers/DepositWithdrawController'
 
 const router = express.Router()
 
@@ -53,6 +54,7 @@ router.get('/api/result-market-auto', new FancyController().declaremarketresultA
 router.get('/api/result-market-fancy-auto', new FancyController().setT10FancyResult)
 
 router.get('/api/get-business-fancy-list', new BetController().fancybetListSelection)
+router.get('/api/callback', new DepositWithdrawController().callbackfrom)
 router.post('/api/update-fancy-result', new FancyController().updatefancyresultapi)
 
 router.get('/api/resync_bookmaker_id', new SportsController().saveMatchResyncCron)

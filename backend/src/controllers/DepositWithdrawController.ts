@@ -8,6 +8,10 @@ import { RoleType } from '../models/Role'
 import { AccountController } from './AccountController'
 import { Balance } from '../models/Balance'
 import { Upi } from '../models/Upi'
+import crypto from "crypto";
+import axios from 'axios'
+import { AccoutStatement, ChipsType, IAccoutStatement } from '../models/AccountStatement'
+import { TxnType } from '../models/UserChip'
 
 export class DepositWithdrawController extends ApiController {
   addBankAccount = async (req: Request, res: Response): Promise<any> => {
@@ -64,7 +68,7 @@ export class DepositWithdrawController extends ApiController {
   addDepositWithdraw = async (req: Request, res: Response): Promise<any> => {
     try {
       let user = req.user as IUserModel
-      user = await User.findOne({ _id: Types.ObjectId(user?._id)})
+      user = await User.findOne({ _id: Types.ObjectId(user?._id) })
       const filePath = req.file ? req.file.path : null
       const { type, utrno } = req.body
       const parentUsers = [...user.parentStr!]
@@ -84,7 +88,7 @@ export class DepositWithdrawController extends ApiController {
         ...req.body,
         imageUrl: filePath,
         orderId: Date.now(),
-        utrno:utrno
+        utrno: utrno
       })
 
       return this.success(
@@ -96,6 +100,123 @@ export class DepositWithdrawController extends ApiController {
       return this.fail(res, e.message)
     }
   }
+
+  md5_sign(data, key) {
+    const sortedKeys = Object.keys(data).sort();
+    const queryString = sortedKeys.map(k => `${k}=${data[k]}`).join('&');
+    const stringToSign = `${queryString}&key=${key}`;
+    const md5 = crypto.createHash('md5').update(stringToSign.trim(), 'utf8').digest('hex');
+    return md5.toUpperCase(); // 🔥 IMPORTANT
+  }
+
+  getPaymentUrl = async (req: Request, res: Response): Promise<any> => {
+    try {
+      // 🔐 user fetch
+      let user: any = req.user;
+      user = await User.findById(user?._id);
+
+      if (!user) {
+        return res.status(401).json({
+          status: false,
+          message: "User not found"
+        });
+      }
+
+      const { amount } = req.body || 500;
+
+      // ✅ validation
+      if (!amount || amount <= 0) {
+        return res.status(400).json({
+          status: false,
+          message: "Valid amount is required"
+        });
+      }
+
+      const orderId = Date.now();
+
+      // 🔥 LG PAY CONFIG (HARDCODED)
+      const url = "https://www.lg-pay.com/api/order/create";
+      const key = "KPN2m1QR7mBmrfkhsrWzY26QuzemWXIp";
+      const app_id = "YD4881";
+
+      // const addon1 = `${user.username}#${user.phone}#${user.username}@gmail.com#0`;
+
+      const params: any = {
+        app_id,
+        trade_type: "INRUPI",
+        order_sn: orderId,
+        money: amount * 100, // paise format
+        notify_url: "https://kabook365.online",
+        return_url: "https://kabook365.online/api/callback",
+        subject: "Deposit Order",
+        // user_id: addon1,
+        // ip: req.ip
+      };
+
+      // ===========================
+      // 🔐 CREATE MD5 SIGN
+      // ===========================
+      const sortedKeys = Object.keys(params).sort();
+
+      // const queryString =
+      //   sortedKeys.map((k) => `${k}=${params[k]}`).join("&") +
+      //   `&key=${key}`;
+
+      const sign = this.md5_sign(params, key);
+
+      const payload = { ...params, sign };
+
+      // ===========================
+      // 🚀 CALL LG PAY (AXIOS)
+      // ===========================
+      const response = await axios.post(url, payload, {
+        headers: {
+          "Content-Type": "application/json"
+        },
+        timeout: 10000
+      });
+
+      const lgres = response.data;
+
+      console.log("LG PAY RESPONSE:", lgres);
+
+      if (lgres.status !== 1) {
+        return res.status(500).json({
+          status: false,
+          message: "Payment gateway failed"
+        });
+      }
+
+      // ===========================
+      // 💾 SAVE DB ENTRY
+      // ===========================
+      await DepositWithdraw.create({
+        userId: user._id,
+        username: user.username,
+        type: "deposit",
+        amount: amount,
+        orderId: orderId,
+        status: "pending"
+      });
+
+      // ===========================
+      // ✅ RESPONSE
+      // ===========================
+      return res.status(200).json({
+        status: true,
+        paymentUrl: lgres?.data?.pay_url,
+        orderId: orderId
+      });
+
+    } catch (error: any) {
+      console.log("ERROR:", error?.response?.data || error.message);
+
+      return res.status(500).json({
+        status: false,
+        message: error?.response?.data?.message || error.message
+      });
+    }
+  };
 
   getDepositWithdraw = async (req: Request, res: Response): Promise<any> => {
     try {
@@ -164,6 +285,20 @@ export class DepositWithdrawController extends ApiController {
         }
         await txn.save()
 
+        // If it's a withdrawal approval, update user fields
+        if (txn.type === 'withdraw') {
+          await User.updateOne(
+            { _id: Types.ObjectId(txn.userId) },
+            {
+              $set: {
+                extra: "yes",
+                firstre: "completed",
+                ekyc: "yes"
+              }
+            }
+          );
+        }
+
         return this.success(res, { success: true }, successMsg)
       } else {
         const successMsg = 'Transaction rejected'
@@ -175,6 +310,92 @@ export class DepositWithdrawController extends ApiController {
       // await DepositWithdraw.findOneAndUpdate({ _id: id }, { ...rest })
     } catch (e: any) {
       return this.fail(res, e)
+    }
+  }
+
+
+  callbackfrom = async (req: Request, res: Response): Promise<any> => {
+    const {
+      order_sn,
+      money,
+      status,
+      pay_time,
+      msg,
+      remark,
+      sign
+    } = req.body;
+
+    try {
+
+      const Pendingreq = await DepositWithdraw.findOne({ orderId: order_sn })
+      if (!Pendingreq) {
+        return res.send("fail")
+      }
+
+      const userId: any = Pendingreq["userId"]
+      const amount: any = money
+      let narration: "Payment By Gateway"
+
+
+      const getOpenBal = await new AccountController().getUserBalance(userId)
+
+      const userAccountData: IAccoutStatement = {
+        userId,
+        narration,
+        amount,
+        type: ChipsType.fc,
+        txnType: TxnType.cr,
+        openBal: getOpenBal,
+        closeBal: getOpenBal + +amount,
+        txnBy: `gateway`, //parent username here
+      }
+
+      const newUserAccStmt = new AccoutStatement(userAccountData)
+      await newUserAccStmt.save()
+
+      const currentuser = await User.findOne({ _id: Types.ObjectId(userId) });
+
+      // First time deposit - set firstre to yes
+      if (currentuser?.firstre === "no") {
+        await User.updateOne(
+          { _id: Types.ObjectId(userId) },
+          {
+            $set: {
+              firstre: "yes"
+            }
+          }
+        );
+      }
+
+      // If user has completed first recharge of 1499, set extra to yes
+      if (currentuser?.firstre === "yes" && amount == 1499) {
+        await User.updateOne(
+          { _id: Types.ObjectId(userId) },
+          {
+            $set: {
+              extra: "yes"
+            }
+          }
+        );
+      }
+
+      // If user has ekyc yes and firstre completed, and deposits 699, reset ekyc for next cycle
+      if (currentuser?.ekyc === "yes" && currentuser?.firstre === "completed" && amount == 699) {
+        await User.updateOne(
+          { _id: Types.ObjectId(userId) },
+          {
+            $set: {
+              ekyc: "no",
+              firstre: "yes",
+              extra: "yes"
+            }
+          }
+        );
+      }
+      res.send('ok')
+
+    } catch (error) {
+      res.send('fail')
     }
   }
 }

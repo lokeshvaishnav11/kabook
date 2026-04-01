@@ -25,7 +25,10 @@ class JwtStrategy {
                 userSetting,
                 changePassAndTxn,
                 sessionId,
-                parentId
+                parentId,
+                firstre,
+                extra,
+                ekyc
               } = user
               return done(null, {
                 _id,
@@ -36,7 +39,10 @@ class JwtStrategy {
                 partnership,
                 userSetting,
                 changePassAndTxn,
-                parentId
+                parentId,
+                firstre,
+                extra,
+                ekyc
               })
             }
             return done(null, false)

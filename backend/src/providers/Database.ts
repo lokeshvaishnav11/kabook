@@ -28,7 +28,7 @@ export class Database {
     //mongoose.set('useCreateIndex', true);
     this.redisCache()
     mongoose.connect(dsn, options, (error: CallbackError) => {
-      // handle the error case
+      // handle the error case 
       if (error) {
         Log.info('Failed to connect to the Mongo server!!')
         console.log(error)

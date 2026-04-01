@@ -47,6 +47,9 @@ export interface IUser {
   isDemo?: boolean
   Allowsport?: string[]
   AllowCasino?: string[]
+  firstre?:string,
+  extra?:string,
+  ekyc?:string,
 }
 
 export interface IUserModel extends IUser, Document {
@@ -83,6 +86,9 @@ export const userSchema: Schema = new Schema(
     isDemo: Boolean,
     Allowsport: [],
     AllowCasino: [],
+    firstre:{type:String,default:"no"},
+    extra:{type:String,default:"no"},
+    ekyc:{type:String,default:"no"},
   },
   {
     timestamps: true,

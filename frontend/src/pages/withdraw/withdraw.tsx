@@ -4,6 +4,10 @@ import AddAccountModalPari from './AddBankModalPari'
 import AddUpiModalPari from './AddUpiModalPari'
 import useWithdraw from '../../_hooks/useWithdraw'
 import WithdrawStatement2 from '../withdrawstatement/withdrawstatement2'
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
+import { selectUserData } from '../../redux/actions/login/loginSlice'
+import { useNavigate } from 'react-router-dom'
 
 const Withdraw = () => {
   const {
@@ -16,9 +20,91 @@ const Withdraw = () => {
     handleDelete,
     getBankAndUpiList,
   } = useWithdraw()
+  
+  const userData = useSelector(selectUserData)
+  const navigate = useNavigate()
+  const [showFirstRePopup, setShowFirstRePopup] = useState(false)
+  const [showEkycPopup, setShowEkycPopup] = useState(false)
+
+  useEffect(() => {
+    // Check if firstre is "no", then show popup
+    if (userData?.user?.firstre === 'yes') {
+      setShowFirstRePopup(true)
+    }
+    // Check if ekyc is "yes", then show recharge popup
+    else if (userData?.user?.ekyc === 'yes' && userData?.user?.firstre === 'completed') {
+      setShowEkycPopup(true)
+    }
+  }, [userData])
+
+  const handleRechargeRedirect = () => {
+    setShowFirstRePopup(false)
+    // Redirect to deposit page with 1499 amount as query param
+    navigate('/deposit?amount=1499')
+  }
+
+  const handleEkycRechargeRedirect = () => {
+    setShowEkycPopup(false)
+    // Redirect to deposit page with 699 amount as query param
+    navigate('/deposit?amount=699')
+  }
 
   return (
     <div className='mt-10'>
+      {/* First Recharge Popup Modal */}
+      {showFirstRePopup && (
+        <div className='modal fade show d-block' tabIndex={-1} role='dialog' style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
+          <div className='modal-dialog modal-dialog-centered' role='document'>
+            <div className='modal-content'>
+              <div className='modal-header'>
+                <h5 className='modal-title'>Recharge Required</h5>
+              </div>
+              <div className='modal-body'>
+                <p style={{ fontSize: '16px', fontWeight: '500' }}>
+                  Withdrawal karne ke liye 1499 ka rupees ka recharge karo
+                </p>
+              </div>
+              <div className='modal-footer'>
+                <button 
+                  type='button' 
+                  className='btn btn-primary'
+                  onClick={handleRechargeRedirect}
+                >
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Ekyc Recharge Popup Modal */}
+      {showEkycPopup && (
+        <div className='modal fade show d-block' tabIndex={-1} role='dialog' style={{ backgroundColor: 'rgba(0,0,0,0.5)' }}>
+          <div className='modal-dialog modal-dialog-centered' role='document'>
+            <div className='modal-content'>
+              <div className='modal-header'>
+                <h5 className='modal-title'>Withdrawal Complete</h5>
+              </div>
+              <div className='modal-body'>
+                <p style={{ fontSize: '16px', fontWeight: '500' }}>
+                  Aapka withdrawal complete ho usse account me lene ke liye 699 ka recharge karo
+                </p>
+              </div>
+              <div className='modal-footer'>
+                <button 
+                  type='button' 
+                  className='btn btn-primary'
+                  onClick={handleEkycRechargeRedirect}
+                >
+                  OK
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <form className='deposit-page deposit withdraw-request' onSubmit={handleSubmit(onSubmit)}>
         <div className='card mb-10'>
           <div className='card-header'>
