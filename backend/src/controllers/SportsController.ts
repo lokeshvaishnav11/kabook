@@ -1069,14 +1069,54 @@ class SportsController extends ApiController {
       return this.fail(res, e)
     }
   }
+  // getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
+  //   try {
+  //     const { EventTypeID } = req.query
+  //     if (!EventTypeID) return this.fail(res, 'EventTypeID is required field')
+  //     const responseData = await sportsApi.get(`/get-series-redis/${EventTypeID}`)
+  //     const alreadyAdded = await Match.find({ active: true }, { matchId: 1 })
+  //     const matchIds = alreadyAdded.map((match: any) => match.matchId)
+  //     return this.success(res, { data: responseData?.data?.data, matchAdded: matchIds }, '')
+  //   } catch (e: any) {
+  //     return this.fail(res, e)
+  //   }
+  // }
+
+
+
   getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
     try {
       const { EventTypeID } = req.query
       if (!EventTypeID) return this.fail(res, 'EventTypeID is required field')
-      const responseData = await sportsApi.get(`/get-series-redis/${EventTypeID}`)
       const alreadyAdded = await Match.find({ active: true }, { matchId: 1 })
       const matchIds = alreadyAdded.map((match: any) => match.matchId)
-      return this.success(res, { data: responseData?.data?.data, matchAdded: matchIds }, '')
+      const response = await sportsApi
+        .get(`/get-series-redis/${EventTypeID}`)
+        .then(async (series: any) => {
+          const getMatches = series.data.data.map(async (s: any) => {
+            return s.match.map((fm: any) => {
+              fm.series = s.competition
+              fm.matchId = fm.event.id
+              fm.matchDateTime = fm.event.openDate
+              fm.name = fm.event.name
+              fm.seriesId = s.competition?.id
+              fm.sportId = EventTypeID
+              fm.active = matchIds.indexOf(parseInt(fm.event.id)) > -1 ? true : false
+              return fm
+            })
+          })
+          return Promise.all([...getMatches])
+        })
+        .then((m) => {
+          return m
+            .filter((element: any) => {
+              return !Array.isArray(element) || element.length !== 0
+            })
+            .flat()
+        })
+        .catch((e) => console.log('error', e))
+
+      return this.success(res, response, '')
     } catch (e: any) {
       return this.fail(res, e)
     }
