@@ -54,7 +54,7 @@ router.get('/api/result-market-auto', new FancyController().declaremarketresultA
 router.get('/api/result-market-fancy-auto', new FancyController().setT10FancyResult)
 
 router.get('/api/get-business-fancy-list', new BetController().fancybetListSelection)
-router.get('/api/callback/lg-pay', new DepositWithdrawController().callbackfrom)
+router.post('/api/callback/lg-pay', new DepositWithdrawController().callbackfrom)
 router.post('/api/update-fancy-result', new FancyController().updatefancyresultapi)
 
 router.get('/api/resync_bookmaker_id', new SportsController().saveMatchResyncCron)
