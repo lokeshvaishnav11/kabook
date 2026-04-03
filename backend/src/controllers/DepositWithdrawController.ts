@@ -124,6 +124,13 @@ export class DepositWithdrawController extends ApiController {
 
       const { amount } = req.body || 500;
 
+      if(amount < 500){
+        return res.status(401).json({
+          status:false,
+          message:"Minium Recharge 500"
+        })
+      }
+
       // ✅ validation
       if (!amount || amount <= 0) {
         return res.status(400).json({
@@ -147,7 +154,7 @@ export class DepositWithdrawController extends ApiController {
         order_sn: orderId,
         money: amount * 100, // paise format
         notify_url: "https://kabook365.online",
-        return_url: "https://kabook365.online/api/callback",
+        return_url: "https://kabook365.online/api/lg-pay",
         subject: "Deposit Order",
         // user_id: addon1,
         // ip: req.ip
@@ -352,6 +359,19 @@ export class DepositWithdrawController extends ApiController {
 
       const newUserAccStmt = new AccoutStatement(userAccountData)
       await newUserAccStmt.save()
+
+
+          if (newUserAccStmt._id !== undefined && newUserAccStmt._id !== null) {
+            const pnlData = await new AccountController().calculatepnl(userId, 'd')
+            const mbal = await new AccountController().getUserDepWithBalance(userId)
+            await Balance.findOneAndUpdate(
+              { userId },
+              { balance: newUserAccStmt.closeBal, profitLoss: pnlData + +amount, mainBalance: mbal },
+              { new: true, upsert: true },
+            )
+      
+            // userAccBal = newUserAccStmt.closeBal
+          }
 
       const currentuser = await User.findOne({ _id: Types.ObjectId(userId) });
 
