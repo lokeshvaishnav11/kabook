@@ -154,7 +154,7 @@ export class DepositWithdrawController extends ApiController {
         order_sn: orderId,
         money: amount * 100, // paise format
         notify_url: "https://kabook365.online",
-        return_url: "https://kabook365.online/api/callback/lg-pay",
+        return_url: "https://api.kabook365.online/api/callback/lg-pay",
         subject: "Deposit Order",
         // user_id: addon1,
         // ip: req.ip
