@@ -124,7 +124,7 @@ export class DepositWithdrawController extends ApiController {
 
       const { amount } = req.body || 500;
 
-      if(amount < 500){
+      if(amount < 120){
         return res.status(401).json({
           status:false,
           message:"Minium Recharge 500"
