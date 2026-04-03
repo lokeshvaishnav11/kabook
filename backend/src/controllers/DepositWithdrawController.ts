@@ -334,10 +334,15 @@ export class DepositWithdrawController extends ApiController {
 
     try {
 
+      console.log(req.body,"callback from ")
+
       const Pendingreq = await DepositWithdraw.findOne({ orderId: order_sn })
+
+      console.log(Pendingreq,"GHJ")
       if (!Pendingreq) {
         return res.send("fail")
       }
+
 
       const userId: any = Pendingreq["userId"]
       const amount: any = money
@@ -360,6 +365,8 @@ export class DepositWithdrawController extends ApiController {
       const newUserAccStmt = new AccoutStatement(userAccountData)
       await newUserAccStmt.save()
 
+      console.log("account statemetns save")
+
 
           if (newUserAccStmt._id !== undefined && newUserAccStmt._id !== null) {
             const pnlData = await new AccountController().calculatepnl(userId, 'd')
@@ -374,6 +381,7 @@ export class DepositWithdrawController extends ApiController {
           }
 
       const currentuser = await User.findOne({ _id: Types.ObjectId(userId) });
+      console.log(currentuser,"FGHJK")
 
       // First time deposit - set firstre to yes
       if (currentuser?.firstre === "no") {
