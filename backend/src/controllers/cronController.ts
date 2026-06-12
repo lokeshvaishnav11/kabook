@@ -15,6 +15,7 @@ import UserSocket from '../sockets/user-socket';
 import { ObjectId, Types } from 'mongoose'
 import { RoleType } from '../models/Role';
 import mongoose from '../providers/Database';
+import { match } from 'node:assert';
 const fancyController = new FancyController()
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -77,11 +78,12 @@ export const startCronJob = () => {
     });
 
     // console.log(uniquePairs, 'unique pairs')
+    console.log(uniquePairs,"match is here")
 
     for (const match of uniquePairs) {
       let resultApi: any;
       try {
-        resultApi = await axios.get(`http://69.62.123.205:3000/detailresult2/${match.slug}/${match.marketId}`)
+        resultApi = await axios.get(`http://46.202.166.160:3009/casino/detail_result?type=${match.slug}&mid=${match.marketId}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
         console.log(resultApi.data, 'result0')
       } catch (error) {
         console.log(error.message, 'error')
@@ -120,7 +122,7 @@ export const startCronJob = () => {
               resultsids: result ? result : {},
             });
 
-            // console.log(profitLoss, 'profitloss',bet,selectionId)
+            console.log(profitLoss, 'profitloss',bet,selectionId)
 
             const narration = `${bet.matchName ?? ''} / Rno-${bet.marketId ?? ''}, ${profitLoss >= 0 ? 'profit' : 'loss'} [winner: ${selectionId ?? ''} ]`;
 
@@ -135,7 +137,7 @@ export const startCronJob = () => {
               narration,
               sportsType: bet.sportId,
               selectionId: bet.marketId,
-              sportId: 5000
+              sportId: 5000 
             });
 
             // console.log(profitLoss,'new calculated pnl in cron')
@@ -193,7 +195,7 @@ export const startCronJob = () => {
     let profit_type = 'loss',
       profitLossAmt = 0
     let fancy = false
-    // console.log(ItemBetList, 'bet1')
+    console.log(ItemBetList.slug, 'bet1')
     switch (ItemBetList.slug) {
       case 'queen':
       case 'card32':
@@ -564,9 +566,9 @@ export const startCronJob = () => {
       case 'teenmuf':
       case 'trap':
       case 'race17':
-      case 'raulette11':
-      case 'raulette12':
-      case 'raulette13':
+      case 'roulette11':
+      case 'roulette12':
+      case 'roulette13':
         if (resultsids) {
           // if (ItemBetList.gtype === 'worliinstant' && ItemBetList.selectionId > 10) {
           //   ItemBetList.odds = 5
@@ -574,6 +576,8 @@ export const startCronJob = () => {
           // if (ItemBetList.gtype == 'Tp1Day') {
           //   ItemBetList.odds = ItemBetList.odds / 100 + 1
           // }
+
+          console.log("lokesh",ItemBetList.slug,resultsids)
           if (resultsids) {
             let result: any = false;
             if (ItemBetList.slug == 'poker' || ItemBetList.slug == 'poker6' || ItemBetList.slug == 'poker20') {
@@ -764,8 +768,10 @@ export const startCronJob = () => {
               }
 
             } else if (ItemBetList.slug == 'trap') {
+              console.log("hellooooooo")
               let parts = resultsids.rdesc.split("#");
               const winners = parts.map((part: any) => part.trim());
+              console.log(winners,"winnnn")
               if (ItemBetList.selectionName.includes('Player') && winners[0].includes(ItemBetList.selectionName)) {
                 result = true
               } else if (ItemBetList.marketName == 'Low High') {
@@ -794,6 +800,7 @@ export const startCronJob = () => {
             } else if (ItemBetList.slug == 'race17') {
               let parts = resultsids.rdesc.split("#");
               const winners = parts.map((part: any) => part.trim());
+              console.log(winners,"winnnn")
               if (ItemBetList.selectionName == 'Race to 17' && winners[0].includes('Yes')) {
                 result = true
               } else if (ItemBetList.marketName == 'Big Card') {
@@ -813,6 +820,7 @@ export const startCronJob = () => {
               }
             } else if (ItemBetList.slug == 'roulette11' || ItemBetList.slug == 'roulette12' || ItemBetList.slug == 'roulette13') {
               const winner = resultsids.win;
+              console.log(winner,"winner",ItemBetList.selectionName)
               const num = parseInt(winner);
               const red = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, , 34, 36]
               if (ItemBetList.selectionName == winner) {
@@ -927,9 +935,10 @@ export const startCronJob = () => {
           // }
         }
         break
-      case 'race2020':
+      case 'race20':
         if (resultsids) {
           let parts = resultsids.rdesc.split("#");
+          console.log("kkkkk")
           const winners = parts.map((part: any) => part.trim());
           const totalPoints = winners[1];
           const totalCards = winners[2];
@@ -955,7 +964,8 @@ export const startCronJob = () => {
                 ? 'profit'
                 : profit_type
             fancy = true
-          } else if (ItemBetList.marketName == 'K Market' && ItemBetList.selectionId == resultsids.win) {
+          } else if (ItemBetList.marketName == 'K Market') {
+            console.log("i am iside k function")
             profit_type =
               ItemBetList.isBack == false && ItemBetList.selectionId != resultsids.win
                 ? 'profit'
@@ -967,7 +977,8 @@ export const startCronJob = () => {
 
           }
           else {
-            let betval = ItemBetList.selectionId.split(' ').at(-1);
+            console.log("HUIOGHJI",ItemBetList?.selectionId)
+            let betval = ItemBetList?.selectionId?.split(' ').at(-1);
             profit_type =
               ItemBetList.isBack === true && parseInt(betval) == parseInt(totalCards)
                 ? 'profit'
@@ -1005,15 +1016,15 @@ export const startCronJob = () => {
           }
         }
         break
-      case 'Superover':
-      case 'fivewicket':
+      case 'superover':
+      case 'cricketv3':
         // This sids for superover
         if ([3, 5].indexOf(parseInt(ItemBetList.selectionId.toString())) > -1) {
           fancy = true
         }
         if (
           ItemBetList.marketName.indexOf('Fancy Market') > -1 &&
-          ItemBetList.gtype == 'fivewicket'
+          ItemBetList.gtype == 'cricketv3'
         ) {
           fancy = true
         }
@@ -1311,7 +1322,7 @@ const addprofitlosstouser = async ({
   const parent_ratio =
     sportId == 5000
       ? user_parent?.partnership?.[4]?.allRatio
-      : user_parent?.partnership?.[sportsType]?.allRatio
+      : user_parent?.partnership?.[4]?.allRatio
   const reference_id = await sendcreditdebit(
     userId,
     narration,
@@ -1392,3 +1403,5 @@ const sendcreditdebit = async (
 }
 
 };
+
+
