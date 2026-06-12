@@ -20,8 +20,8 @@ export default class CasinoController extends ApiController {
        console.log("fghjkl")
 
       const [response, resultResponse] = await Promise.all([
-        axios.get(`http://69.62.123.205:3000/tabledata2/${type}`),
-        axios.get(`http://69.62.123.205:3000/casinoresult2/${type}`)
+        axios.get(`http://130.250.191.212:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`),
+        axios.get(`http://130.250.191.212:3009/casino/result?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
       ]);
 
 
@@ -74,6 +74,7 @@ export default class CasinoController extends ApiController {
       return eventJson[type == '3cardj' ? 'Cards3J' : type]()
         .then(async (jsonData: any) => {
           const cloneJsonData = JSON.parse(JSON.stringify(jsonData.default));
+          console.log(cloneJsonData,"clonse")
           if (type != "teen91") {
 
             if (type === "cricketv3") {
@@ -95,6 +96,7 @@ export default class CasinoController extends ApiController {
             //   }
             // }
             const marketData = marketFormatter(markets, cloneJsonData);
+            // console.log(marketData,"matket Data")
             // console.log(tv,'tv')
             let eventData = {
               ...cloneJsonData,
@@ -105,15 +107,21 @@ export default class CasinoController extends ApiController {
               defaultMarkets: cloneJsonData.event_data.market,
               scoreCard: scoreCards,
             };
-            let mid = data?.data?.mid
-            if (type == 'superover') {
-              mid = data?.data?.t1?.gmid
+                  let mid = data?.data?.mid
+              if (type == 'superover' || type == "cricketv3") {
+                console.log(data.data.t1)
+              mid = data.data.t1.gmid
+              // console.log(mid,"mid")
+              //  data.data = data.data.t1
             }
-            const desc = data?.data?.rdesc
-            const autotime = data?.data?.lt
-            const min = data?.data?.sub[0]?.min
-            const max = data?.data?.sub[0]?.max
-            const cards = data?.data?.card?.split(',')
+    
+          
+            // console.log(data,"data")
+            const desc = data?.data?.rdesc || data?.data?.t1?.rdesc
+            const autotime = data?.data?.lt || data?.data?.t1?.lt
+            const min =  10000 // data?.data?.sub[0]?.min ||
+            const max = 1000000. // data?.data?.sub[0]?.max || 
+            const cards = data?.data?.card?.split(',') || data?.data?.t1?.card?.split('|')
             const score = data?.data?.score ?? ''
             const cardObj: any = {};
             const ar = data?.data?.ares ?? ''
@@ -265,16 +273,21 @@ getSingleMarket = async (req: Request, res: Response) => {
         return this.fail(res, "selectionId is a required field");
 
       if (type === "AAA") type = "aaa";
+         if (type === "Superover") type = "superover";
+      // type == "Superover" ? "superover" :type
+      // type =="fivewicket" ? "cricketv3" :type
+
+      console.log(type,"type")
 
       let response = await axios.get(
-        `http://69.62.123.205:3000/tabledata2/${type}`
+        `http://130.250.191.212:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`
       );
       let data = response.data;
+      console.log(data,"single")
 
-
-      let pdata = data?.data?.sub ?? [];
+      let pdata = data?.data?.sub ?? data.data.t2;
       let markets: any = pdata;
-      // console.log(markets, "markets");
+      console.log(markets, "markets");
 
       interface Market {
         sid?: string | undefined; // Ensure sid is always a string (no undefined allowed)
