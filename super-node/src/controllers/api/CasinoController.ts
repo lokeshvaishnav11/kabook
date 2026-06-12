@@ -20,8 +20,8 @@ export default class CasinoController extends ApiController {
        console.log("fghjkl")
 
       const [response, resultResponse] = await Promise.all([
-        axios.get(`http://130.250.191.212:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`),
-        axios.get(`http://130.250.191.212:3009/casino/result?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
+        axios.get(`http://46.202.166.160:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`),
+        axios.get(`http://46.202.166.160:3009/casino/result?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
       ]);
 
 
@@ -280,7 +280,7 @@ getSingleMarket = async (req: Request, res: Response) => {
       console.log(type,"type")
 
       let response = await axios.get(
-        `http://130.250.191.212:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`
+        `http://46.202.166.160:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`
       );
       let data = response.data;
       console.log(data,"single")
