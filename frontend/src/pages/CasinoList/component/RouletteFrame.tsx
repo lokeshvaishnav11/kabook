@@ -24,7 +24,7 @@ const RouletteFrame = ({ liveMatchData, lastOdds }: any) => {
       {liveMatchData && (
         <iframe
           title='stream'
-          src={`https://casino-stream-v2.cricketid.xyz/casino-tv?id=${gameCode}&retry=1`}
+          src={`https://shayam-hd-movies.akamster.com/casino/${gameCode}&retry=1`}
           style={{
             width: '100%',
             height: '100%',
