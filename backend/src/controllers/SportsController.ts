@@ -1084,37 +1084,97 @@ class SportsController extends ApiController {
 
 
 
-  getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
+ 
+    getSeriesWithMarket = async (req: Request, res: Response): Promise<any> => {
     try {
       const { EventTypeID } = req.query
       if (!EventTypeID) return this.fail(res, 'EventTypeID is required field')
       const alreadyAdded = await Match.find({ active: true }, { matchId: 1 })
+      console.log(alreadyAdded, "Hello  World")
       const matchIds = alreadyAdded.map((match: any) => match.matchId)
-      const response = await sportsApi
-        .get(`/get-series-redis/${EventTypeID}`)
+
+      const response = await axios.get(
+        "http://64.227.139.183:3088/sportapi/match-list?sportsid=4&key=lokesh1234",
+        {
+          headers: {
+            "x-api-key": "a3f41cc1eff0e0609f70b738d9e9d6cfda7b7465",
+            "x-api-secret":
+              "06926b1891e99df1dd28f123c4935cfb87d07e4b9641f21ac99bc6f31263f946",
+          },
+        }
+      )
         .then(async (series: any) => {
-          const getMatches = series.data.data.map(async (s: any) => {
-            return s.match.map((fm: any) => {
-              fm.series = s.competition
-              fm.matchId = fm.event.id
-              fm.matchDateTime = fm.event.openDate
-              fm.name = fm.event.name
-              fm.seriesId = s.competition?.id
-              fm.sportId = EventTypeID
-              fm.active = matchIds.indexOf(parseInt(fm.event.id)) > -1 ? true : false
-              return fm
-            })
-          })
-          return Promise.all([...getMatches])
+          // console.log(series, "series from api");
+
+          if (EventTypeID == "10" || EventTypeID == "65") {
+
+            console.log("hello world")
+
+            var getMatches =
+              series?.data?.data?.data?.t1?.flatMap((s: any) =>
+                (s.children || []).flatMap((c: any) =>
+                  (c.children || []).map((cc: any) => ({
+                    event: {
+                      id: cc.gmid,
+                      name: c.ename,
+                      timezone: "GMT",
+                      openDate: cc.stime,
+                    },
+                    series: {
+                      id: s.cid.toString(),
+                      name: s.cname,
+                    },
+                    matchId: cc.gmid,
+                    matchDateTime: cc.stime,
+                    name: c.ename,
+                    seriesId: s.cid.toString(),
+                    sportId: EventTypeID,
+                    active: matchIds.includes(parseInt(cc.gmid)),
+                  }))
+                )
+              ) || [];
+
+          }
+
+          else {
+
+           var getMatches:any = [
+  ...(series?.data?.data?.t1 || []),
+  ...(series?.data?.data?.t2 || []),
+].map((s: any) => {
+  return {
+    event: {
+      id: s.gmid,
+      name: s.ename,
+      timezone: "GMT",
+      openDate: s.stime,
+    },
+
+    series: {
+      id: s.cid.toString(),
+      name: s.cname,
+    },
+
+    matchId: s.gmid,
+    matchDateTime: s.stime,
+    name: s.ename,
+    seriesId: s.cid.toString(),
+    sportId: EventTypeID,
+    active: matchIds.includes(parseInt(s.gmid)),
+  };
+});
+          }
+
+          return Promise.all([...getMatches]);
         })
-        .then((m) => {
-          return m
-            .filter((element: any) => {
-              return !Array.isArray(element) || element.length !== 0
-            })
-            .flat()
+        .then((matches) => {
+          return matches.filter(Boolean); // remove undefined/null if any
         })
-        .catch((e) => console.log('error', e))
+        .catch((e) => {
+          console.log('error', e);
+          return [];
+        });
+      // console.log(response, "response is here")
 
       return this.success(res, response, '')
     } catch (e: any) {

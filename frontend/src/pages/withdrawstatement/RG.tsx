@@ -8,7 +8,7 @@ const RG = () => {
           Responsible Gaming
         </h2>
         <p className="text-muted text-center mb-5">
-          At <strong>KABOOK365.com</strong>, we encourage all users to enjoy
+          At <strong>khelmantra365.com</strong>, we encourage all users to enjoy
           betting as a form of entertainment — not as a way to make money.
           Responsible gaming is at the heart of what we stand for.
         </p>
@@ -108,14 +108,14 @@ const RG = () => {
         <section className="mb-4">
           <h5 className="fw-semibold">7. Our Message</h5>
           <p>
-            <strong>KABOOK365</strong> stands for safe, transparent, and enjoyable
+            <strong>khelmantra365</strong> stands for safe, transparent, and enjoyable
             gaming. We remind all our users — play smart, play safe, and always
             know when to stop.
           </p>
         </section>
 
         <p className="text-center mt-5 small text-secondary">
-          © {new Date().getFullYear()} KABOOK365.com — Play Responsibly.
+          © {new Date().getFullYear()} khelmantra365.com — Play Responsibly.
         </p>
       </div>
     </div>

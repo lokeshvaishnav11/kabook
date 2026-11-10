@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 // const dotenv = require("dotenv");
 dotenv.config({
-  path: process.env.NODE_ENV ? `.env.${process.env.NODE_ENV}` : ".env",
+  path: ".env",
 });
 import App from "./src/App";
 import cluster from "cluster";

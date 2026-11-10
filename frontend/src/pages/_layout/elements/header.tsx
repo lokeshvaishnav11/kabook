@@ -463,7 +463,7 @@ const Header = () => {
                 to='/match/4/in-play'
                 className='logo router-link-exact-active router-link-active'
               >
-                <img src='/imgs/logo.png' className='logo-icon' />
+                <img src='/imgs/khellogo.png' className='logo-icon' />
               </CustomLink>
 
 

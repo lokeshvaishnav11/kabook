@@ -17,7 +17,7 @@ if (rootElement) {
     <Suspense
       fallback={
         <div className='suspense-loading'>
-          <img src='/imgs/logo.png' width={200} />
+          <img src='/imgs/khekhellogo.png' width={200} />
         </div>
       }
     >

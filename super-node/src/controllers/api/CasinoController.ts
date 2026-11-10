@@ -17,17 +17,29 @@ export default class CasinoController extends ApiController {
 
       if (type === "AAA") type = "aaa";
 
-       console.log("fghjkl")
 
-      const [response, resultResponse] = await Promise.all([
-        axios.get(`http://46.202.166.160:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`),
-        axios.get(`http://46.202.166.160:3009/casino/result?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
-      ]);
+      // const [response, resultResponse] = await Promise.all([
+      //   axios.get(`http://46.202.166.160:3009/casino/data?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`),
+      //   axios.get(`http://46.202.166.160:3009/casino/result?type=${type}&key=9iiiihdfsdfhdskjfdherfsdhfdhfsdhfsshhhxbbhhgvgshjjj`)
+      // ]);
 
+
+        const tableDataResponse = await axios.get(
+      `http://64.227.139.183:3088/casinoapi/casinoData?gtype=${type}&key=lokesh8279`, {
+      headers: {
+        "x-api-key": "a3f41cc1eff0e0609f70b738d9e9d6cfda7b7465",
+        "x-api-secret":
+          "06926b1891e99df1dd28f123c4935cfb87d07e4b9641f21ac99bc6f31263f946",
+      },
+    }
+    )
+
+    const response = tableDataResponse?.data?.data;
+    const resultResponse =tableDataResponse?.data.results?.data|| {};
+      
 
       // console.log(response,resultResponse.data,"hello world")
 
-      console.log('Api time', Date.now() - time1)
 
       let data = response.data;
       // console.log(data)
@@ -42,7 +54,7 @@ export default class CasinoController extends ApiController {
 
       // console.log(resultResponse.data)
 
-      results = resultResponse?.data?.data?.res ?? [];
+      results = resultResponse?.data.res ?? [];
 
       if(type === 'worli3'){
          return this.success(res, { data,results });

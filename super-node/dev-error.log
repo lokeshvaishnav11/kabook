@@ -1,0 +1,9 @@
+yarn run v1.22.22
+$ npx tsc --project './tsconfig.json' --watch & NODE_ENV=development nodemon --ignore 'dist/src/*.json' --ignore 'dist/src/controllers/*.json'  dist
+/bin/sh: nodemon: command not found
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+c1:56:19 AM - Starting compilation in watch mode...
+
+
+1:56:22 AM - Found 0 errors. Watching for file changes.
