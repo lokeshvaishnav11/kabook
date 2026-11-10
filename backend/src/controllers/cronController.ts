@@ -83,15 +83,15 @@ export const startCronJob = () => {
     for (const match of uniquePairs) {
       let resultApi: any;
       try {
-       const resultApi = await axios.get(
-      `http://64.227.139.183:3088/casinoapi/casinoResult?gtype=${slug}&mid=${mid}&key=lokesh8279`, {
+ const resultApi = await axios.get(
+      `http://64.227.139.183:3088/casinoapi/casinoResult?gtype=${match.slugslug}&mid=${match.marketId}&key=lokesh8279`, {
       headers: {
         "x-api-key": "a3f41cc1eff0e0609f70b738d9e9d6cfda7b7465",
         "x-api-secret":
           "06926b1891e99df1dd28f123c4935cfb87d07e4b9641f21ac99bc6f31263f946",
       },
     }
-    )       
+    )        
      console.log(resultApi.data, 'result0')
       } catch (error) {
         console.log(error.message, 'error')
